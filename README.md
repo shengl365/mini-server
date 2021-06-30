@@ -13,7 +13,7 @@ Root file is forbidden for access
 Getway return error
 
 
-### Course Required
+### Project Requirement
 * IPC - int pipe(int pipefd)
 * Build socket by "bind->listen->accept->close"
 * CGI for execute other process

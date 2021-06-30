@@ -1,14 +1,19 @@
-<head>
-    <meta charset="UTF-8">
-    Mini-Server<p>
-</head>
-<body>
+## Mini-Server - 2019 Advanced Programming in the UNIX Environment Course
 
-1.分析封包為GET/POST<br>
+*./server [port]*
 
-2.封包請求路徑回應方式：<br>
-200</br> 
-403 Not found<br>
-404 Forbidden<br>
+Only Access for GET/POST metohd
 
-3.封包是否有CGI程式(.php/.sh)<br>
+#### 200 OK 
+#### 403 Not found
+If the route is not exist, server return 403
+#### 404 Forbidden
+Root file is forbidden for access
+#### 502 Bad Gateway
+Getway return error
+
+
+### Course Required
+*IPC - int pipe(int pipefd)
+*Build socket by "bind->listen->accept->close"
+*CGI for execute other process
